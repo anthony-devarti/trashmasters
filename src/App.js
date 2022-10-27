@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './routes/Home'
-import Users from './routes/Users'
+import Episodes from './routes/Episodes'
 import About from './routes/About'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
@@ -18,45 +18,33 @@ function App() {
           <Container>
             <Navbar.Brand>
               <Link to="/">
+                {/* Replace with a logo */}
                 The Goblin TrashMasters
               </Link>
             </Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="#home">
+              <Nav.Link as="div">
                 <Link to="/">
                   Home
                 </Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link as="div">
                 <Link to="/about">
                   About
                 </Link>
               </Nav.Link>
-              <Nav.Link>
-                <Link to="/users">
-                  Users
+              <Nav.Link as="div">
+                <Link id="Episodes" to="/episodes">
+                  Episodes
                 </Link>
               </Nav.Link>
             </Nav>
           </Container>
         </Navbar>
-        <Navbar>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </Navbar>
 
         <Routes>
           <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
+          <Route path="/episodes" element={<Episodes />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
