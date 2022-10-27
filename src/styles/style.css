@@ -32,4 +32,9 @@
   height: 200px;
   width: 400px;
   font-size: 60pt;
+}
+
+.about-card {
+  width: 30vw;
+  margin: 2rem;
 }/*# sourceMappingURL=style.css.map */
