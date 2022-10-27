@@ -1,5 +1,6 @@
 .footer {
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -9,4 +10,26 @@
   height: 37.5px;
   align-items: center;
   justify-content: space-around;
+}
+
+.hero {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .sm {
+  height: 50px;
+  width: 100px;
+  font-size: 20pt;
+}
+.hero .md {
+  height: 100px;
+  width: 200px;
+  font-size: 40pt;
+}
+.hero .lg {
+  height: 200px;
+  width: 400px;
+  font-size: 60pt;
 }/*# sourceMappingURL=style.css.map */

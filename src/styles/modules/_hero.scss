@@ -1,0 +1,24 @@
+.hero{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sm{
+        height: 50px;
+        width: 100px;
+        font-size: 20pt;
+    }
+
+    .md{
+        height: 100px;
+        width: 200px;
+        font-size: 40pt;
+    }
+
+    .lg{
+        height: 200px;
+        width: 400px;
+        font-size: 60pt;
+    }
+}
