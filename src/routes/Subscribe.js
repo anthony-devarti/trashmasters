@@ -1,4 +1,4 @@
-import SubscriptionButton from "../components/SubscribtionButton";
+import SubscriptionButton from "../components/subcomponents/SubscribtionButton";
 
 export default function Subscribe() {
     return (

@@ -7,8 +7,8 @@ icon: string of fa code.  Defaults to microphone
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
-import AppleIcon from './svgComponents/AppleIcon';
-import GoogleIcon from './svgComponents/GoogleIcon';
+import AppleIcon from '../svgComponents/AppleIcon';
+import GoogleIcon from '../svgComponents/GoogleIcon';
 
 export default function SubscriptionButton(props) {
 
