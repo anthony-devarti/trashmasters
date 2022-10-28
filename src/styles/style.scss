@@ -1,4 +1,22 @@
 @import 'variables';
+
+//modules imports
 @import 'modules/footer';
 @import 'modules/hero';
 @import 'modules/about_card';
+@import 'modules/buttons';
+@import 'modules/navbar';
+
+//pages imports
+@import 'pages/Subscribe';
+
+//
+.global{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,13 @@
+@import '../variables';
+
+.navigator{
+    display: flex;
+
+    .nav-link{
+
+        .link {
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}

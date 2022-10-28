@@ -1,13 +1,12 @@
 .footer {
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   bottom: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
   background-color: black;
   color: white;
-  height: 37.5px;
+  height: 35px;
   align-items: center;
   justify-content: space-around;
 }
@@ -37,4 +36,84 @@
 .about-card {
   width: 30vw;
   margin: 2rem;
+}
+
+/* CSS */
+.custom-button {
+  align-items: center;
+  background-image: linear-gradient(144deg, red, white 50%, black);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.custom-button:active,
+.custom-button:hover {
+  outline: 0;
+}
+
+.custom-button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.custom-button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .custom-button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+.navigator {
+  display: flex;
+}
+.navigator .nav-link .link {
+  text-decoration: none;
+  color: red;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe .subscription {
+  margin: 2rem;
+}
+.subscribe .subscription .icon {
+  fill: white;
+}
+
+.global {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.global .center {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
