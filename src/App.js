@@ -9,6 +9,7 @@ import Home from './routes/Home';
 import Episodes from './routes/Episodes';
 import About from './routes/About';
 import Subscribe from './routes/Subscribe';
+import Shop from './routes/Shop';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Footer from './components/Footer';
 
@@ -55,6 +56,7 @@ function App() {
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/subscribe" element={<Subscribe/>} />
             <Route path="/" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
         </div>
       </Router>

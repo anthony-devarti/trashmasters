@@ -11,15 +11,13 @@ export default function Subscribe() {
             <div className="subscription">
                 <SubscriptionButton
                     service={"Apple Podcasts"}
-                    link={"apple.com"}
-                    icon={"faApple"}
+                    link={"https://apple.com"}
                 />
             </div>
             <div className="subscription">
                 <SubscriptionButton
                     service={"Google Podcasts"}
                     link={"google.com"}
-                    icon={false}
                 />
             </div>
         </div>
