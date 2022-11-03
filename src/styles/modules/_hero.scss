@@ -3,6 +3,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .btn{
+        background-color: $olive;
+        align-items: center;
+        width: 90vw;
+        height: min-content;
+        padding: 1rem;
+        border-radius: 20px;
+        font-size: 2rem;
+        color: $light;
+        margin: 2rem;
+    }
+
+    .hero-header {
+        margin: 2rem;
+        font-size: 40pt;
+        color: $light;
+        text-align: center;
+        text-shadow: 5px 5px $dark-red;
+        font-weight: 600;
+    }
+
+    .red {
+        background-color: $dark-red;
+    }
 
     .sm{
         height: 50px;

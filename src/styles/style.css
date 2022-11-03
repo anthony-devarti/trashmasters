@@ -17,6 +17,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero .btn {
+  background-color: #B2AC58;
+  align-items: center;
+  width: 90vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  color: #f7f6fa;
+  margin: 2rem;
+}
+.hero .hero-header {
+  margin: 2rem;
+  font-size: 40pt;
+  color: #f7f6fa;
+  text-align: center;
+  text-shadow: 5px 5px #730A13;
+  font-weight: 600;
+}
+.hero .red {
+  background-color: #730A13;
 }
 .hero .sm {
   height: 50px;

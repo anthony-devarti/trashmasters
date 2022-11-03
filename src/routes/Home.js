@@ -9,7 +9,6 @@ export default function Home() {
     return (
         <>
             <Hero 
-            size={100}
             cta={true}
             ctaText={"GO"}
             ctaVariant={"secondary"}

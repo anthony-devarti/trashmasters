@@ -22,8 +22,8 @@ export default function Hero(props) {
 
 
     return (
-        <div className="hero" style={{ 
-            height: `${props.size}vh`,
+        <div className="hero" style={{
+            height: size,
             backgroundImage: `url(${props.bgImage})`
             }}>
             {props.cta &&
