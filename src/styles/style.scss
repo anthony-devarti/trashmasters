@@ -14,7 +14,17 @@
 
 //
 .global{
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+
+    .a {
+        color: $light;
+    }
+
+    .trashmasters{
+        font-family: 'Grenze Gotisch', cursive;
+    }
+
     font-size: large;
 
     .center {

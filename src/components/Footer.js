@@ -3,10 +3,7 @@ export default function Footer(props) {
     return (
         <div className="footer">
             <div>
-                The Goblin Trashmasters
-            </div>
-            <div>
-                <a href="mailto:goblintrashmasters@gmail.com">Email Us</a>
+                <a href="mailto:goblintrashmasters@gmail.com" className="footer-link">Email Us</a>
             </div>
             <div>
                 {`Copyright The Goblin Trashmasters ${year}`}

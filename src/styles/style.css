@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -11,12 +11,41 @@
   align-items: center;
   justify-content: space-around;
 }
+.footer .footer-link {
+  color: #f7f6fa;
+}
 
 .hero {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero .btn {
+  background-color: #B2AC58;
+  align-items: center;
+  width: 90vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  color: #f7f6fa;
+  margin: 2rem;
+}
+.hero .hero-header {
+  margin: 2rem;
+  font-size: 30pt;
+  color: #f7f6fa;
+  text-align: center;
+  text-shadow: 2px 2px #730A13;
+  font-weight: 600;
+}
+.hero .red {
+  background-color: #730A13;
 }
 .hero .sm {
   height: 50px;
@@ -42,7 +71,7 @@
 /* CSS */
 .custom-button {
   align-items: center;
-  background-image: linear-gradient(144deg, red, white 50%, black);
+  background-image: linear-gradient(144deg, #730A13, #D9303E 50%, #B2AC58);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -93,9 +122,20 @@
 .navigator {
   display: flex;
 }
+.navigator .brand {
+  color: #f7f6fa;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.navigator .navbar-brand {
+  font-family: "Grenze Gotisch", cursive;
+}
+.navigator .navbar-brand .a {
+  color: #f7f6fa !important;
+}
 .navigator .nav-link .link {
   text-decoration: none;
-  color: red;
+  color: #f7f6fa;
 }
 
 .episode-card {
@@ -319,8 +359,14 @@
 }
 
 .global {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: large;
+}
+.global .a {
+  color: #f7f6fa;
+}
+.global .trashmasters {
+  font-family: "Grenze Gotisch", cursive;
 }
 .global .center {
   display: flex;
