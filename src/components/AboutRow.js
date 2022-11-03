@@ -1,32 +1,40 @@
 import { Container, Row, Col } from 'react-bootstrap'
+/* 
+this will provide an about row for hosts
+props:
+name: string
+info: array of strings
+roles: string
+image: path to image
+*/
 
-
-export default function AboutRow() {
+export default function AboutRow(props) {
     return (
-            <Row>
-                <Col className="skew-col name">
-                    <div className="unskewed">
-                        Anthony
-                    </div>
-                </Col>
-                <Col className="skew-col info">
-                    <div className="unskewed">
-                        <ul>
-                            <li>A cool fact</li>
-                            <li>Another cool fact</li>
-                        </ul>
-                    </div>
-                </Col>
-                <Col className="skew-col roles">
-                    <div className="unskewed">
-                        I do this thing
-                    </div>
-                </Col>
-                <Col >
-                <div>
-                    A picture goes here
+        <Row>
+            <div className="skew-col name">
+                <div className="unskewed name-text">
+                    {props.name}
                 </div>
-                </Col>
-            </Row>
+            </div>
+            <div className="skew-col info">
+                <div className="unskewed text">
+                    <ul>
+                        {props.info.map((point) => {
+                            return (
+                                <li key={point}>{point}</li>
+                            )
+                        })}
+                    </ul>
+                </div>
+            </div>
+            <div className="skew-col roles">
+                <div className="unskewed text">
+                    {props.roles}
+                </div>
+            </div>
+            <div className='picture'>
+                    A picture goes here
+            </div>
+        </Row>
     )
 }
