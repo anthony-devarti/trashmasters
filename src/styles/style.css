@@ -355,7 +355,41 @@
 }
 
 .about {
-  display: flex;
+  color: black;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  bottom: -35px;
+}
+.about .unskewed {
+  padding: 4rem;
+  transform: skewX(-45deg);
+}
+.about .row {
+  width: 100vw;
+  height: calc((100vh - 75px - 35px) / 4);
+  margin-left: -8rem;
+}
+.about .row .skew-col {
+  background-color: red;
+  transform: skewX(45deg);
+  height: 100%;
+}
+.about .row .info {
+  background-color: #730A13;
+  color: #f7f6fa;
+  width: 1rem;
+}
+.about .row .info:hover {
+  width: auto;
+}
+.about .row .roles {
+  background-color: #f7f6fa;
+  color: black;
+}
+.about .first {
+  background-image: none;
+  background-color: white;
 }
 
 .global {

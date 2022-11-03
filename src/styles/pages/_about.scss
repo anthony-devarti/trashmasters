@@ -1,5 +1,45 @@
 @import '../variables';
 
-.about{
-    display: flex;
+.about {
+    color: black;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    bottom: -$footer-height;
+
+    .unskewed{
+        padding: 4rem;
+        transform: skewX(-45deg);
+    }
+
+    .row {
+        width: 100vw;
+        height: calc((100vh - $navbar-height - $footer-height) / 4);
+        margin-left: -8rem;
+
+        .skew-col{
+            background-color: red;
+            transform: skewX(45deg);
+            height: 100%;
+        }
+
+        .info{
+            background-color: $dark-red;
+            color: $light;
+            width: 1rem;
+        }
+        .info:hover {
+            width: auto;
+        }
+
+        .roles{
+            background-color: $light;
+            color: black;
+        }
+    }
+
+    .first{
+        background-image: none;
+        background-color: white;
+    }
 }
