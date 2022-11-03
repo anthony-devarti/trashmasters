@@ -4,7 +4,6 @@ export default function Home() {
     return (
         <>
             <Hero 
-            size={100}
             cta={true}
             header={"New Episodes out now!"}
             ctaText={"LISTEN"}

@@ -1,5 +1,95 @@
 @import '../variables';
 
-.about{
-    display: flex;
+.about {
+    color: black;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    bottom: -$footer-height;
+
+    .unskewed {
+        padding: 2rem;
+        transform: skewX(-45deg);
+    }
+
+    .picture {
+        position: relative;
+        right: 0;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 50vw;
+    }
+
+    .row {
+        width: 100vw;
+        height: 15vh;
+        margin-left: -8rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .skew-col {
+            background-color: red;
+            transform: skewX(45deg);
+            height: 100%;
+            width: 15vw;
+            transition: width 2s;
+            transition-timing-function: ease-out;
+        }
+
+        .name-text {
+            color: $light;
+            font-size: 2rem;
+            text-align: end;
+            position: absolute;
+            bottom: 5px;
+            right: 42px;
+            padding: unset;
+        }
+
+        .text {
+            display: none;
+        }
+
+        .name {
+            background-color: black;
+            width: 30vw;
+            color: $light;
+        }
+
+        .info {
+            background-color: $dark-red;
+            color: transparent;
+        }
+
+        .roles {
+            background-color: $red;
+            color: transparent;
+        }
+
+        .skew-col:hover {
+            width: 500px;
+            color: $light;
+
+            .text {
+                display: flex;
+            }
+        }
+
+        .name:hover {
+            width: 30vw;
+        }
+    }
+
+    .first {
+        background-image: none;
+        background-color: white;
+        margin-left: 0;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 30pt;
+        font-weight: 600;
+        text-align: center;
+    }
 }

@@ -64,7 +64,7 @@
 }
 
 .about-card {
-  width: 30vw;
+  width: 20vw;
   margin: 2rem;
 }
 
@@ -355,7 +355,84 @@
 }
 
 .about {
+  color: black;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  bottom: -35px;
+}
+.about .unskewed {
+  padding: 2rem;
+  transform: skewX(-45deg);
+}
+.about .picture {
+  position: relative;
+  right: 0;
+  height: 100%;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 50vw;
+}
+.about .row {
+  width: 100vw;
+  height: 15vh;
+  margin-left: -8rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.about .row .skew-col {
+  background-color: red;
+  transform: skewX(45deg);
+  height: 100%;
+  width: 15vw;
+  transition: width 2s;
+  transition-timing-function: ease-out;
+}
+.about .row .name-text {
+  color: #f7f6fa;
+  font-size: 2rem;
+  text-align: end;
+  position: absolute;
+  bottom: 5px;
+  right: 42px;
+  padding: unset;
+}
+.about .row .text {
+  display: none;
+}
+.about .row .name {
+  background-color: black;
+  width: 30vw;
+  color: #f7f6fa;
+}
+.about .row .info {
+  background-color: #730A13;
+  color: transparent;
+}
+.about .row .roles {
+  background-color: #D9303E;
+  color: transparent;
+}
+.about .row .skew-col:hover {
+  width: 500px;
+  color: #f7f6fa;
+}
+.about .row .skew-col:hover .text {
+  display: flex;
+}
+.about .row .name:hover {
+  width: 30vw;
+}
+.about .first {
+  background-image: none;
+  background-color: white;
+  margin-left: 0;
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 30pt;
+  font-weight: 600;
+  text-align: center;
 }
 
 .global {
