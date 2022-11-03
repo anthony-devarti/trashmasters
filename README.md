@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Notes and Documentation
+
+## RSS Stuff
+Support for google podcasts pubishing:
+https://support.google.com/podcast-publishers/answer/9889544#required_podcast
+
+## Components
+The components documentation is currently within the components themselves.  It should be moved to here when they are "done"
+
+### SVG Components
+SVGs are stored in the SvgComponents folder and are accessible as their own React Components.  The naming convention is Standard react component capitilzation and Icon.  For example, an email icon will appear as EmailIcon

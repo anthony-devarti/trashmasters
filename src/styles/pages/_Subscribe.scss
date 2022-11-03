@@ -1,0 +1,15 @@
+@import '../variables';
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .subscription{
+        margin: 2rem;
+
+        .icon{
+            fill: white;
+        }
+    }
+}

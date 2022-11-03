@@ -1,58 +1,73 @@
-import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
 } from "react-router-dom";
-import Home from './routes/Home'
-import Episodes from './routes/Episodes'
-import About from './routes/About'
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import Home from './routes/Home';
+import Episodes from './routes/Episodes';
+import About from './routes/About';
+import Subscribe from './routes/Subscribe';
+import Shop from './routes/Shop';
+import NotFound from "./routes/NotFound";
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import Footer from './components/Footer';
+import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 
 function App() {
+
   return (
-    <>
+    <div className='global'>
       <Router>
         <div>
-          <Navbar bg="dark" variant="dark">
+          <Navbar bg="dark" variant="dark" expand="lg" className="navigator">
             <Container>
               <Navbar.Brand>
-                <Link to="/">
+                <Link to="/" className="brand">
                   {/* Replace with a logo */}
                   The Goblin TrashMasters
                 </Link>
               </Navbar.Brand>
-              <Nav className="me-auto">
-                <Nav.Link as="div">
-                  <Link to="/">
-                    Home
-                  </Link>
-                </Nav.Link>
-                <Nav.Link as="div">
-                  <Link to="/about">
-                    About
-                  </Link>
-                </Nav.Link>
-                <Nav.Link as="div">
-                  <Link id="Episodes" to="/episodes">
-                    Episodes
-                  </Link>
-                </Nav.Link>
-              </Nav>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link as="div">
+                    <Link to="/" className='link'>
+                      Home
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link as="div">
+                    <Link to="/about" className='link'>
+                      About
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link as="div">
+                    <Link to="/episodes" className='link'>
+                      Episodes
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link as="div">
+                    <Link to="/subscribe" className='link'>
+                      Subscribe
+                    </Link>
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
             </Container>
           </Navbar>
 
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/episodes" element={<Episodes />} />
+            <Route path="/subscribe" element={<Subscribe />} />
             <Route path="/" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>
       <Footer />
-    </>
+    </div>
   );
 }
 

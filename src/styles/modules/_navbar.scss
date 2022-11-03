@@ -1,0 +1,28 @@
+@import '../variables';
+
+.navigator {
+    display: flex;
+
+    .brand {
+        color: $light;
+        text-decoration: none;
+        margin-right: 2rem;
+    }
+
+    .navbar-brand {
+        font-family: 'Grenze Gotisch', cursive;
+
+
+        .a {
+            color: $light !important;
+        }
+    }
+
+    .nav-link {
+
+        .link {
+            text-decoration: none;
+            color: $light;
+        }
+    }
+}

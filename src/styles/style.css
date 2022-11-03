@@ -1,15 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 .footer {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
   background-color: black;
   color: white;
-  height: 37.5px;
+  height: 35px;
   align-items: center;
   justify-content: space-around;
+}
+.footer .footer-link {
+  color: #f7f6fa;
 }
 
 .hero {
@@ -17,6 +20,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.hero .btn {
+  background-color: #B2AC58;
+  align-items: center;
+  width: 90vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 2rem;
+  color: #f7f6fa;
+  margin: 2rem;
+}
+.hero .hero-header {
+  margin: 2rem;
+  font-size: 30pt;
+  color: #f7f6fa;
+  text-align: center;
+  text-shadow: 2px 2px #730A13;
+  font-weight: 600;
+}
+.hero .red {
+  background-color: #730A13;
 }
 .hero .sm {
   height: 50px;
@@ -37,4 +66,309 @@
 .about-card {
   width: 30vw;
   margin: 2rem;
+}
+
+/* CSS */
+.custom-button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #730A13, #D9303E 50%, #B2AC58);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.custom-button:active,
+.custom-button:hover {
+  outline: 0;
+}
+
+.custom-button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.custom-button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .custom-button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+.navigator {
+  display: flex;
+}
+.navigator .brand {
+  color: #f7f6fa;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.navigator .navbar-brand {
+  font-family: "Grenze Gotisch", cursive;
+}
+.navigator .navbar-brand .a {
+  color: #f7f6fa !important;
+}
+.navigator .nav-link .link {
+  text-decoration: none;
+  color: #f7f6fa;
+}
+
+.episode-card {
+  margin: 1rem;
+  /* product specifications */
+  /* checkout button*/
+  /* animation */
+}
+.episode-card *,
+.episode-card button,
+.episode-card input {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.episode-card html,
+.episode-card body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, #414850, #131720);
+  color: #D5E1EF;
+}
+.episode-card body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+.episode-card .wrapper {
+  width: 350px;
+  border-radius: 40px;
+  background-image: linear-gradient(120deg, #343A4F, #0F1620);
+  overflow: hidden;
+}
+.episode-card .overviewInfo,
+.episode-card .productSpecifications {
+  padding: 24px;
+  color: white;
+}
+.episode-card .overviewInfo {
+  background-image: linear-gradient(176deg, #3D9DEA, #4A4EEE);
+}
+.episode-card .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.episode-card .actions .cartbutton {
+  position: relative;
+}
+.episode-card .actions .cartbutton::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-image: linear-gradient(90deg, #489be2, #0f629c);
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  right: 8px;
+}
+.episode-card .actions .cartbutton svg {
+  color: rgba(171, 171, 171, 0.4509803922);
+}
+.episode-card .actions .backbutton,
+.episode-card .actions .cartbutton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.episode-card .neurobutton {
+  background-image: linear-gradient(120deg, #343A4F, #0F1620);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 3px 4px 5px 0px rgba(197, 197, 197, 0.1), inset 3px 6px 6px 5px rgba(78, 77, 77, 0.1), -2px -2px 8px 2px rgba(255, 255, 255, 0.1), 2px 2px 6px 3px rgba(0, 0, 0, 0.4);
+}
+.episode-card .productinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 200px;
+  margin-bottom: 50px;
+}
+.episode-card .productImage {
+  position: absolute;
+  width: 321px;
+  height: auto;
+  transform: rotate(-90deg) translate(-56px, 66px);
+  transition: ease 2s all;
+}
+.episode-card .productImage img {
+  width: 100%;
+  height: auto;
+}
+.episode-card .productImage:hover {
+  transition: ease 2s all;
+  -webkit-animation: none;
+          animation: none;
+  transform: rotate(-70deg) translate(10px, 66px);
+}
+.episode-card h1 {
+  font-family: "Michroma", sans-serif;
+}
+.episode-card .grouptext h3 {
+  letter-spacing: 3.2px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.episode-card .grouptext p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.episode-card .featureIcon {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(120deg, #343A4F, #0F1620);
+  border-radius: 8px;
+  margin-right: 16px;
+}
+.episode-card .productSpecifications h1 {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+.episode-card .productSpecifications p {
+  opacity: 0.8;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.episode-card .productSpecifications .productFeatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  grid-row-gap: 16px;
+}
+.episode-card .productSpecifications .productFeatures .feature {
+  display: flex;
+}
+.episode-card .checkoutButton {
+  display: flex;
+  width: 100%;
+  background-image: linear-gradient(120deg, #343A4F, #0F1620);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: -2px -2px 2px 0px rgba(80, 80, 80, 0.1), 2px 2px 3px 0px rgba(12, 12, 12, 0.3), inset 0px 0px 0px 2px rgba(80, 80, 80, 0.2);
+  margin-top: 30px;
+  padding: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+.episode-card .priceTag {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+.episode-card .priceTag .priceTag > * {
+  fill: whitesmoke;
+  height: 50px;
+}
+.episode-card .priceTag span {
+  color: #488dc7;
+  font-size: 20px;
+}
+.episode-card button.preorder {
+  outline: 0;
+  border: 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image: linear-gradient(85deg, #61c7ef, #4833fb);
+  color: white;
+}
+.episode-card .preorder p {
+  padding: 8px 17px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+.episode-card .buttonaction {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+@-webkit-keyframes updowncontroller {
+  0% {
+    transform: rotate(-90deg) translate(-56px, 66px);
+  }
+  80%, 100% {
+    transform: rotate(-70deg) translate(10px, 66px);
+  }
+}
+@keyframes updowncontroller {
+  0% {
+    transform: rotate(-90deg) translate(-56px, 66px);
+  }
+  80%, 100% {
+    transform: rotate(-70deg) translate(10px, 66px);
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe .subscription {
+  margin: 2rem;
+}
+.subscribe .subscription .icon {
+  fill: white;
+}
+
+.about {
+  display: flex;
+}
+
+.global {
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+}
+.global .a {
+  color: #f7f6fa;
+}
+.global .trashmasters {
+  font-family: "Grenze Gotisch", cursive;
+}
+.global .center {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
