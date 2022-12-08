@@ -5,7 +5,7 @@ export default function Footer(props) {
     return (
         <div className="footer">
             <div>
-                <img src={icon} classname='logo' height='20px'/>
+                <img src={icon} className='logo' height='20px'/>
             </div>
             <div>
                 <a href="mailto:goblintrashmasters@gmail.com" className="footer-link">Email Us</a>

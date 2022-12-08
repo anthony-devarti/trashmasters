@@ -1,57 +1,52 @@
 import EpisodeCard from "../components/EpisodeCard";
 import { useEffect, useState } from "react";
-import { useFeed } from "react-hook-rss";
 import { rssUrl } from "../data/appConstants";
 
 export default function Episodes(props) {
 
-
-    // const feed = useFeed("https://brainstormbrewery.com/category/podcasts/brainstormbrewery/feed/");
-
-    // useEffect(() => {
-    //     console.log("the feed", feed);
-    // }, [feed]);
-
-    const [ feed, setFeed ] = useState([])
-    console.log("feed", feed)
+    const [rowData, setRowData] = useState()
 
     useEffect(() => {
 
-        fetch(rssUrl).
-            then(response => response.text).
-            then(str => {
-                const parser = new window.DOMParser();
-                const data = parser.parseFromString(str, 'text/xml');
+        fetch(rssUrl)
+            .then(response => response.text())
+            .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+            .then(data => {
+                console.log("data in the request", data)
                 const itemList = data.querySelectorAll('item');
+
                 const items = [];
-                itemList.forEach((el) => {
+                itemList.forEach(el => {
                     items.push({
+                        pubDate: new Date(el.querySelector('pubDate').textContent),
                         title: el.querySelector('title').innerHTML,
-                        pubDate: new Date(el.querySelector('pubdate').textContent),
-                        mp3: el.querySelector('enclosure').getAttribute('url')
-                    })
-                })
-                setFeed(items);
-            })
-    },[])
+                        mp3: el.querySelector('enclosure').getAttribute('url'),
+                        description: el.querySelector('description').textContent,
+                        link: el.querySelector('link').textContent,
+                    });
+                });
 
+                setRowData(items)
+            });
 
-    //probably will need some sort of useEffect to go grab the podcast episodes from the backend.
-
-    const exampleEpisode = {
-        title: 'Example Title',
-        description: 'Here is an example description',
-        release: '10/31/22',
-        image: "https://i.imgur.com/ckSgzLQ.png",
-        // guestName: "Me",
-        // guestInfo: "I'm just a little guy."
-    }
+    }, []);
 
     return (
         <>
-            Episodes
-
-            <EpisodeCard episode={exampleEpisode} />
+            <h1 className="title-section center">
+                Episodes
+            </h1>
+            <h2 className="center">Check out all of our episodes right here.</h2>
+            {
+                rowData &&
+                rowData.length > 0 &&
+                rowData.map((row, index) => {
+                    return (
+                        <EpisodeCard episode={row} />
+                    )
+                })
+            }
+            {/* <EpisodeCard episode={rowData[0]} /> */}
         </>
     )
 }

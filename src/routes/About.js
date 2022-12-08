@@ -14,11 +14,6 @@ export default function About() {
                     roles={"Developer"}
                 />
                 <AboutRow
-                    name={"Bobby"}
-                    info={['Commander Coolguy', 'New to magic']}
-                    roles={"Producer"}
-                />
-                <AboutRow
                     name={"Kyle"}
                     info={['Modern Maestro', '10 years experience']}
                     roles={"Designer"}
