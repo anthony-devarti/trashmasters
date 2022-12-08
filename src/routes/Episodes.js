@@ -22,7 +22,7 @@ export default function Episodes(props) {
                         title: el.querySelector('title').innerHTML,
                         mp3: el.querySelector('enclosure').getAttribute('url'),
                         description: el.querySelector('description').textContent,
-                        link: el.querySelector('link').textContent
+                        link: el.querySelector('link').textContent,
                     });
                 });
 
@@ -33,7 +33,7 @@ export default function Episodes(props) {
 
     return (
         <>
-            <h1 className="center">
+            <h1 className="title-section center">
                 Episodes
             </h1>
             <h2 className="center">Check out all of our episodes right here.</h2>

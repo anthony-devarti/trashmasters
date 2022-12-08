@@ -4,9 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: $footer-height;
 
     .subscription{
-        margin: 2rem;
+        padding: 2rem;
 
         .icon{
             fill: white;
