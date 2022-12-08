@@ -1,0 +1,1 @@
+export const rssUrl = 'https://brainstormbrewery.com/category/podcasts/brainstormbrewery/feed/"'

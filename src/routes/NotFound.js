@@ -1,7 +1,18 @@
-export default function NotFound () {
-    return(
-        <>
-        The requested route could not be found.  Click a link in the navbar to go back to the site.
-        </>
+import { Button } from 'react-bootstrap'
+import error from '../images/error.jpg'
+import { Link } from 'react-router-dom'
+
+export default function NotFound() {
+
+    return (
+        <div className='not-found'>
+            <h1> 404 Route not found </h1>
+            <img src={error} alt="Whoopsie" className='error'/>
+            <Link 
+            className='button'
+            to="/"
+            >Go Home
+            </Link>
+        </div>
     )
 }
