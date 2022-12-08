@@ -342,6 +342,13 @@
   }
 }
 
+.title-section {
+  display: flex;
+  padding: 2rem;
+  font-family: "Grenze Gotisch", cursive;
+  justify-content: center;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
