@@ -15,4 +15,10 @@
     .footer-link{
         color: $light;
     }
+
+    .logo{
+        height: $footer-height;
+        width: $footer-height;
+        margin: 2rem;
+    }
 }

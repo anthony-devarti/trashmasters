@@ -14,6 +14,11 @@
 .footer .footer-link {
   color: #f7f6fa;
 }
+.footer .logo {
+  height: 35px;
+  width: 35px;
+  margin: 2rem;
+}
 
 .hero {
   width: 100vw;
@@ -139,7 +144,7 @@
 }
 
 .episode-card {
-  margin: 1rem;
+  margin: 3rem;
   /* product specifications */
   /* checkout button*/
   /* animation */
@@ -226,12 +231,12 @@
   position: absolute;
   width: 321px;
   height: auto;
-  transform: rotate(-90deg) translate(-56px, 66px);
   transition: ease 2s all;
 }
 .episode-card .productImage img {
-  width: 100%;
+  width: 70%;
   height: auto;
+  border-radius: 15%;
 }
 .episode-card .productImage:hover {
   transition: ease 2s all;
@@ -342,13 +347,20 @@
   }
 }
 
+.title-section {
+  display: flex;
+  padding: 2rem;
+  font-family: "Grenze Gotisch", cursive;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 35px;
 }
 .subscribe .subscription {
-  margin: 2rem;
+  padding: 2rem;
 }
 .subscribe .subscription .icon {
   fill: white;
@@ -361,11 +373,19 @@
   position: relative;
   bottom: -35px;
 }
-.about .unskewed {
+@media (max-width: 800px) {
+  .about .desktop {
+    display: none;
+  }
+  .about .mobile {
+    display: flex;
+  }
+}
+.about .desktop .unskewed {
   padding: 2rem;
   transform: skewX(-45deg);
 }
-.about .picture {
+.about .desktop .picture {
   position: relative;
   right: 0;
   height: 100%;
@@ -374,7 +394,7 @@
   justify-content: flex-end;
   width: 50vw;
 }
-.about .row {
+.about .desktop .row {
   width: 100vw;
   height: 15vh;
   margin-left: -8rem;
@@ -382,7 +402,7 @@
   display: flex;
   flex-direction: column;
 }
-.about .row .skew-col {
+.about .desktop .row .skew-col {
   background-color: red;
   transform: skewX(45deg);
   height: 100%;
@@ -390,7 +410,7 @@
   transition: width 2s;
   transition-timing-function: ease-out;
 }
-.about .row .name-text {
+.about .desktop .row .name-text {
   color: #f7f6fa;
   font-size: 2rem;
   text-align: end;
@@ -399,33 +419,33 @@
   right: 42px;
   padding: unset;
 }
-.about .row .text {
+.about .desktop .row .text {
   display: none;
 }
-.about .row .name {
+.about .desktop .row .name {
   background-color: black;
   width: 30vw;
   color: #f7f6fa;
 }
-.about .row .info {
+.about .desktop .row .info {
   background-color: #730A13;
   color: transparent;
 }
-.about .row .roles {
+.about .desktop .row .roles {
   background-color: #D9303E;
   color: transparent;
 }
-.about .row .skew-col:hover {
+.about .desktop .row .skew-col:hover {
   width: 500px;
   color: #f7f6fa;
 }
-.about .row .skew-col:hover .text {
+.about .desktop .row .skew-col:hover .text {
   display: flex;
 }
-.about .row .name:hover {
+.about .desktop .row .name:hover {
   width: 30vw;
 }
-.about .first {
+.about .desktop .first {
   background-image: none;
   background-color: white;
   margin-left: 0;
@@ -433,6 +453,35 @@
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 75px;
+  height: 60vh;
+  align-items: center;
+}
+.not-found .error {
+  height: 45vh;
+  width: 45vh;
+}
+.not-found .button {
+  background-color: #730A13;
+  border-color: #D9303E;
+  transition: 0.5s;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.not-found .button:hover {
+  background-color: #D9303E;
+  transform: scale(2, 2);
 }
 
 .global {
