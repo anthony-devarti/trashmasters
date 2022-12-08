@@ -10,14 +10,26 @@ import PodcastIcon from '../svgComponents/PodcastIcon';
 
 export default function SubscriptionButton(props) {
 
-    let buttonIcon = <PodcastIcon style={{height: "30px"}}/>
+    let buttonIcon = <PodcastIcon style={{ height: "30px" }} />
     //more can be added this way
     switch (props.service) {
         case "Apple Podcasts":
-            buttonIcon = <AppleIcon style={{height: "30px"}}/>
+            buttonIcon = <AppleIcon style={{ height: "30px" }} />
             break;
         case "Google Podcasts":
-            buttonIcon = <GoogleIcon style={{height: "30px"}}/>
+            buttonIcon = <GoogleIcon style={{ height: "30px" }} />
+            break;
+        case "Stitcher Radio":
+            buttonIcon = <PodcastIcon style={{ height: "30px" }} />
+            break;
+        case "iHeartRadio":
+            buttonIcon = <PodcastIcon style={{ height: "30px" }} />
+            break;
+        case "Stitcher":
+            buttonIcon = <PodcastIcon style={{ height: "30px" }} />
+            break;
+        case "Stitcher":
+            buttonIcon = <PodcastIcon style={{ height: "30px" }} />
             break;
         default:
             break;
@@ -30,7 +42,7 @@ export default function SubscriptionButton(props) {
 
     //control for fogetting https://
     let target = props.link
-    if (!target.includes("https://")){
+    if (!target.includes("https://")) {
         target = "https://" + props.link
     }
 

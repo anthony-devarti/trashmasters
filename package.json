@@ -18,7 +18,9 @@
     "react-hook-rss": "^1.0.6",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "rss": "^1.2.2",
     "rss-parser": "^3.12.0",
+    "rss-parser-browser": "^2.2.2",
     "sass": "^1.55.0",
     "web-vitals": "^2.1.4"
   },
