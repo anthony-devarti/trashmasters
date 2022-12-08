@@ -139,7 +139,7 @@
 }
 
 .episode-card {
-  margin: 1rem;
+  margin: 2.5rem;
   /* product specifications */
   /* checkout button*/
   /* animation */
@@ -226,12 +226,12 @@
   position: absolute;
   width: 321px;
   height: auto;
-  transform: rotate(-90deg) translate(-56px, 66px);
   transition: ease 2s all;
 }
 .episode-card .productImage img {
-  width: 100%;
+  width: 70%;
   height: auto;
+  border-radius: 15%;
 }
 .episode-card .productImage:hover {
   transition: ease 2s all;
@@ -342,6 +342,27 @@
   }
 }
 
+.title-section {
+  display: flex;
+  padding: 2rem;
+  font-family: "Grenze Gotisch", cursive;
+  justify-content: center;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+          animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -433,6 +454,12 @@
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
+}
+
+.discord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .global {

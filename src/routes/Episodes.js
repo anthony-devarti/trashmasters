@@ -1,23 +1,59 @@
 import EpisodeCard from "../components/EpisodeCard";
+import { useEffect, useState } from "react";
+import { rssUrl } from "../data/appContants";
+import Spinner from '../components/svgComponents/Spinner'
 
-export default function Episodes() {
+export default function Episodes(props) {
 
-    //probably will need some sort of useEffect to go grab the podcast episodes from the backend.
+    const [rowData, setRowData] = useState()
 
-    const exampleEpisode = {
-        title: 'Example Title',
-        description: 'Here is an example description',
-        release: '10/31/22',
-        image: "https://i.imgur.com/ckSgzLQ.png",
-        // guestName: "Me",
-        // guestInfo: "I'm just a little guy."
-    }
+    useEffect(() => {
+
+        fetch(rssUrl)
+            .then(response => response.text())
+            .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+            .then(data => {
+                console.log("data in the request", data)
+                const itemList = data.querySelectorAll('item');
+
+                const items = [];
+                itemList.forEach(el => {
+                    items.push({
+                        pubDate: new Date(el.querySelector('pubDate').textContent),
+                        title: el.querySelector('title').innerHTML,
+                        mp3: el.querySelector('enclosure').getAttribute('url'),
+                        description: el.querySelector('description').textContent,
+                        link: el.querySelector('link').textContent,
+                    });
+                });
+
+                setRowData(items)
+            });
+
+    }, []);
 
     return (
         <>
-        Episodes
-        
-        <EpisodeCard episode={exampleEpisode}/>
+            <h1 className="title-section center">
+                Episodes
+            </h1>
+            <h2 className="center">Check out all of our episodes right here.</h2>
+            {
+                !rowData &&
+                <div className="spinner">
+                    <Spinner style={{ height: "30vh" }} />
+                </div>
+            }
+            {
+                rowData &&
+                rowData.length > 0 &&
+                rowData.map((row, index) => {
+                    return (
+                        <EpisodeCard episode={row} />
+                    )
+                })
+            }
+            {/* <EpisodeCard episode={rowData[0]} /> */}
         </>
     )
 }
