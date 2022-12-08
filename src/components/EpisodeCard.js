@@ -4,18 +4,15 @@ Props:
 episode: an object that contains:
     title: string
     description: string
-    pubDate: a date object?  Maybe a string.  Maybe there should be a utility function so this can be put in directly from the backend.
+    release: a date object?  Maybe a string.  Maybe there should be a utility function so this can be put in directly from the backend.
     guestName: string, optional, guest seciont does not appear if this is left null
     guestInfo: string, optional
 */
 
 import PodcastIcon from '../components/svgComponents/PodcastIcon'
-import descriptionCleaner from '../utilities/descriptionCleaner'
-import titleCleaner from '../utilities/titleCleaner'
 
-export default function EpisodeCard({episode}) {
+export default function EpisodeCard({ episode }) {
 
-    console.log("episode in episode Card", episode)
 
 
     return (
@@ -29,10 +26,10 @@ export default function EpisodeCard({episode}) {
                     <div className="productinfo">
                         <div className="grouptext">
                             <h3>RELEASE DATE</h3>
-                            <p>{episode.pubDate.toDateString()}</p>
+                            <p>{episode.release}</p>
                         </div>
                         <div className="productImage">
-                            <img src='https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/33509107/33509107-1668188693116-39b87b194a714.jpg' alt="episode image" />
+                            <img src={episode.image} alt="episode image" />
                         </div>
 
                     </div>
@@ -41,8 +38,22 @@ export default function EpisodeCard({episode}) {
                 {/* <!-- overview info --> */}
 
                 <div className="productSpecifications">
-                    <h1> {titleCleaner(episode.title)} </h1>
-                    <p> {descriptionCleaner(episode.description)} </p>
+                    <h1> {episode.title} </h1>
+                    <p> {episode.description} </p>
+
+                    {episode.guestName &&
+                        <div className="productFeatures">
+                            <div className="feature">
+                                <div className="featureIcon">
+                                </div>
+                                <div className="featureText">
+                                    <p> <strong>{episode.guestName}</strong></p>
+                                    <p>{episode.guestInfo}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
 
                     <div className="checkoutButton">
                         <div className="priceTag">
@@ -50,7 +61,7 @@ export default function EpisodeCard({episode}) {
                         </div>
                         <button
                             className="preorder"
-                            onClick={() => window.open(episode.link, '_blank')}
+                            onClick={() => console.log(`Clicking on ${episode.title}`)}
                         >
                             <p>Listen</p>
                             <div className="buttonaction">
