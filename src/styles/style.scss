@@ -7,10 +7,12 @@
 @import 'modules/buttons';
 @import 'modules/navbar';
 @import 'modules/episode_card';
-
+@import 'modules/title_section';
+@import 'modules/spinner';
 //pages imports
 @import 'pages/Subscribe';
 @import 'pages/about';
+@import 'pages/discord';
 
 //
 .global{

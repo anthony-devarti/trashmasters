@@ -4,23 +4,18 @@ import AboutRow from "../components/AboutRow"
 export default function About() {
     return (
         <Container className="about">
-            <Row className="first">
+            <Row className="first title-section">
                     Meet the Trashmasters!
             </Row>
             <AboutRow
                 name={'Anthony'}
-                info={['one cool fact', 'another cool fact']}
-                roles={"Web dev"}
-            />
-            <AboutRow
-                name={"Bobby"}
-                info={['one cool fact', 'another cool fact']}
-                roles={"Editor"}
+                info={['Standard Specialist', 'Been playing magic forever']}
+                roles={"Developer"}
             />
             <AboutRow
                 name={"Kyle"}
-                info={['one cool fact', 'another cool fact']}
-                roles={"Designer"}
+                info={['Modern Maestro', '10 years magic experience']}
+                roles={"Graphic Designer"}
             />
         </Container>
     )
