@@ -13,6 +13,7 @@ import NotFound from "./routes/NotFound";
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import Footer from './components/Footer';
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
+import Discord from "./routes/Discord";
 
 function App() {
 
@@ -51,6 +52,11 @@ function App() {
                       Subscribe
                     </Link>
                   </Nav.Link>
+                  <Nav.Link as="div">
+                    <Link to="/discord" className='link'>
+                      Discord
+                    </Link>
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -62,6 +68,7 @@ function App() {
             <Route path="/subscribe" element={<Subscribe />} />
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/discord" element={<Discord/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

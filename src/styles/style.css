@@ -351,6 +351,7 @@
   display: flex;
   padding: 2rem;
   font-family: "Grenze Gotisch", cursive;
+  justify-content: center;
 }
 
 .subscribe {
@@ -482,6 +483,12 @@
 .not-found .button:hover {
   background-color: #D9303E;
   transform: scale(2, 2);
+}
+
+.discord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .global {
