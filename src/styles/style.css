@@ -351,6 +351,7 @@
   display: flex;
   padding: 2rem;
   font-family: "Grenze Gotisch", cursive;
+  justify-content: center;
 }
 
 .subscribe {
