@@ -1,1 +1,0 @@
-export const rssUrl = "https://anchor.fm/s/c8536d6c/podcast/rss"

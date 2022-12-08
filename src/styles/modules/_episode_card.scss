@@ -6,7 +6,7 @@ $darkblue: #4A4EEE;
 $text-color: #D5E1EF;
 
 .episode-card {
-    margin: 3rem;
+    margin: 1rem;
 
     *,
     button,
@@ -108,13 +108,12 @@ $text-color: #D5E1EF;
 
         width: 321px;
         height: auto;
-        // transform: rotate(-90deg) translate(-56px, 66px);
+        transform: rotate(-90deg) translate(-56px, 66px);
 
         // animation: updowncontroller infinite 3s alternate;
         img {
-            width: 70%;
-            height: auto;
-            border-radius: 15%;
+            width: 100%;
+            height: auto
         }
 
         transition: ease 2s all;
