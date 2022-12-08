@@ -6,6 +6,11 @@
     margin-right: 0;
     position: relative;
     bottom: -$footer-height;
+    margin-bottom: 1rem;
+
+    .mobile{
+        display: none;
+    }
 
     .unskewed {
         padding: 2rem;
@@ -92,4 +97,21 @@
         font-weight: 600;
         text-align: center;
     }
+
+    @media screen and (max-width: 480px) {
+        .desktop{
+            display: none;
+        }
+
+        .mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 2rem;
+
+            .card{
+                margin: 1rem;
+            }
+        }
+      }
 }

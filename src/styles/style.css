@@ -381,6 +381,10 @@
   margin-right: 0;
   position: relative;
   bottom: -35px;
+  margin-bottom: 1rem;
+}
+.about .mobile {
+  display: none;
 }
 .about .unskewed {
   padding: 2rem;
@@ -454,6 +458,20 @@
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .about .desktop {
+    display: none;
+  }
+  .about .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .about .mobile .card {
+    margin: 1rem;
+  }
 }
 
 .discord {
