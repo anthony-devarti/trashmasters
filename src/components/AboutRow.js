@@ -1,5 +1,4 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import error from '../images/error.jpg'
 /* 
 this will provide an about row for hosts
 props:
@@ -34,7 +33,7 @@ export default function AboutRow(props) {
                 </div>
             </div>
             <div className='picture'>
-                    <img src={error} height='125px' width='125ox' style={{backgroundColor: 'transparent'}}/>
+                    A picture goes here
             </div>
         </Row>
     )

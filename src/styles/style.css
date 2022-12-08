@@ -14,11 +14,6 @@
 .footer .footer-link {
   color: #f7f6fa;
 }
-.footer .logo {
-  height: 35px;
-  width: 35px;
-  margin: 2rem;
-}
 
 .hero {
   width: 100vw;
@@ -144,7 +139,7 @@
 }
 
 .episode-card {
-  margin: 3rem;
+  margin: 1rem;
   /* product specifications */
   /* checkout button*/
   /* animation */
@@ -231,12 +226,12 @@
   position: absolute;
   width: 321px;
   height: auto;
+  transform: rotate(-90deg) translate(-56px, 66px);
   transition: ease 2s all;
 }
 .episode-card .productImage img {
-  width: 70%;
+  width: 100%;
   height: auto;
-  border-radius: 15%;
 }
 .episode-card .productImage:hover {
   transition: ease 2s all;
@@ -347,20 +342,13 @@
   }
 }
 
-.title-section {
-  display: flex;
-  padding: 2rem;
-  font-family: "Grenze Gotisch", cursive;
-}
-
 .subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 35px;
 }
 .subscribe .subscription {
-  padding: 2rem;
+  margin: 2rem;
 }
 .subscribe .subscription .icon {
   fill: white;
@@ -373,19 +361,11 @@
   position: relative;
   bottom: -35px;
 }
-@media (max-width: 800px) {
-  .about .desktop {
-    display: none;
-  }
-  .about .mobile {
-    display: flex;
-  }
-}
-.about .desktop .unskewed {
+.about .unskewed {
   padding: 2rem;
   transform: skewX(-45deg);
 }
-.about .desktop .picture {
+.about .picture {
   position: relative;
   right: 0;
   height: 100%;
@@ -394,7 +374,7 @@
   justify-content: flex-end;
   width: 50vw;
 }
-.about .desktop .row {
+.about .row {
   width: 100vw;
   height: 15vh;
   margin-left: -8rem;
@@ -402,7 +382,7 @@
   display: flex;
   flex-direction: column;
 }
-.about .desktop .row .skew-col {
+.about .row .skew-col {
   background-color: red;
   transform: skewX(45deg);
   height: 100%;
@@ -410,7 +390,7 @@
   transition: width 2s;
   transition-timing-function: ease-out;
 }
-.about .desktop .row .name-text {
+.about .row .name-text {
   color: #f7f6fa;
   font-size: 2rem;
   text-align: end;
@@ -419,33 +399,33 @@
   right: 42px;
   padding: unset;
 }
-.about .desktop .row .text {
+.about .row .text {
   display: none;
 }
-.about .desktop .row .name {
+.about .row .name {
   background-color: black;
   width: 30vw;
   color: #f7f6fa;
 }
-.about .desktop .row .info {
+.about .row .info {
   background-color: #730A13;
   color: transparent;
 }
-.about .desktop .row .roles {
+.about .row .roles {
   background-color: #D9303E;
   color: transparent;
 }
-.about .desktop .row .skew-col:hover {
+.about .row .skew-col:hover {
   width: 500px;
   color: #f7f6fa;
 }
-.about .desktop .row .skew-col:hover .text {
+.about .row .skew-col:hover .text {
   display: flex;
 }
-.about .desktop .row .name:hover {
+.about .row .name:hover {
   width: 30vw;
 }
-.about .desktop .first {
+.about .first {
   background-image: none;
   background-color: white;
   margin-left: 0;
@@ -453,35 +433,6 @@
   font-size: 30pt;
   font-weight: 600;
   text-align: center;
-}
-
-.not-found {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 75px;
-  height: 60vh;
-  align-items: center;
-}
-.not-found .error {
-  height: 45vh;
-  width: 45vh;
-}
-.not-found .button {
-  background-color: #730A13;
-  border-color: #D9303E;
-  transition: 0.5s;
-  color: white;
-  border-radius: 40px;
-  text-decoration: none;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.not-found .button:hover {
-  background-color: #D9303E;
-  transform: scale(2, 2);
 }
 
 .global {
