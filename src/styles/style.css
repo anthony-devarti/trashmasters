@@ -84,6 +84,7 @@
   line-height: 1em;
   max-width: 100%;
   min-width: 140px;
+  min-height: 50px;
   padding: 3px;
   text-decoration: none;
   -moz-user-select: none;
@@ -363,6 +364,18 @@
           animation-timing-function: linear;
 }
 
+.instruction-seciton {
+  margin: 3rem;
+}
+.instruction-seciton .nav-btns {
+  display: flex;
+  margin-top: 1rem;
+}
+.instruction-seciton .nav {
+  display: flex;
+  justify-content: center;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -479,6 +492,30 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 75px;
+}
+
+.guests {
+  display: flex;
+  flex-direction: column;
+}
+.guests .version-selector {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.guests .version-selector .buttons-containter {
+  margin: 1rem;
+}
+.guests .instruction-section {
+  margin: 3rem;
+}
+.guests .instruction-section .nav-btns {
+  display: flex;
+  margin-top: 1rem;
+}
+.guests .instruction-section .nav {
+  display: flex;
+  justify-content: center;
 }
 
 .global {

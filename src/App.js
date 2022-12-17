@@ -9,6 +9,7 @@ import Episodes from './routes/Episodes';
 import About from './routes/About';
 import Subscribe from './routes/Subscribe';
 import Shop from './routes/Shop';
+import Guests from './routes/Guests';
 import NotFound from "./routes/NotFound";
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import Footer from './components/Footer';
@@ -69,6 +70,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/discord" element={<Discord />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path ="/guests" element={<Guests />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
