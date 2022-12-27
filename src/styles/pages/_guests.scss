@@ -1,0 +1,31 @@
+@import '../variables';
+
+.guests{
+    display: flex;
+    flex-direction: column;
+
+    .version-selector{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+
+        .buttons-containter{
+            margin: 1rem;
+        }
+    }
+
+    .instruction-section{
+        margin: 3rem;
+
+        .nav-btns{
+            display: flex;
+            margin-top: 1rem;
+
+        }
+        
+        .nav{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
