@@ -1,0 +1,42 @@
+@import '../variables';
+
+.social{
+    min-height: calc(100vh - $navbar-height);
+    
+    .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .account{
+        color: $white;
+        height: 20vw;
+        width: 20vw;
+        margin: 1rem;
+        background-color: $black;
+        border-radius: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+        .account > div{
+            display: flex;
+            justify-content: center;
+        }
+
+    @media screen and (max-width: 480px) {
+        .body{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+            align-items: center;
+        }
+
+        .account{
+            height: 50vw;
+            width: 50vw;
+        }
+    }
+}

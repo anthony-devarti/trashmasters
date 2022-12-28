@@ -32,7 +32,7 @@ export default function EpisodeCard({ episode }) {
                             <p>{episode.pubDate?.toDateString()}</p>
                         </div>
                         <div className="productImage">
-                            <img src='https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/33509107/33509107-1668188693116-39b87b194a714.jpg' alt="episode image" />
+                            <img src='https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/33509107/33509107-1668188693116-39b87b194a714.jpg' alt="episode" />
                         </div>
 
                     </div>
