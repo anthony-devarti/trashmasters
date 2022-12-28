@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Card, Button } from 'react-bootstrap'
 import AboutRow from "../components/AboutRow"
 
 export default function About() {

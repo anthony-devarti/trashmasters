@@ -40,7 +40,6 @@ export default function SubscriptionButton(props) {
             <div className="center">
                 <button
                     className="custom-button"
-                    role="button"
                     onClick={() => window.open(target, '_blank')}
                 >
                     <span class="text">
