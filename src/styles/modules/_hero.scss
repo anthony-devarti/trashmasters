@@ -50,4 +50,12 @@
         width: 400px;
         font-size: 60pt;
     }
+
+    .a:hover{
+        color: $light;
+    }
+
+    .custom-button:hover{
+            outline: $light solid 1px;
+    }
 }

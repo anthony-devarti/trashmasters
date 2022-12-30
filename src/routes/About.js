@@ -40,19 +40,6 @@ export default function About() {
                         {/* <Button variant="primary">Go somewhere</Button> */}
                     </Card.Body>
                 </Card>
-                <Card>
-                    <Card.Body>
-                        <Card.Title>Social Media</Card.Title>
-                        <Card.Text>
-                            <div style={{display: 'flex', flexDirection: 'column'}}>
-                            Follow us on Social Media, if that's your thing.
-                            <Button className='mt-4'>Twitter</Button>
-                            <Button className='mt-4'>Instagram</Button>
-                            <Button className='mt-4'>Facebook</Button>
-                            </div>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
             </div>
         </Container>
     )

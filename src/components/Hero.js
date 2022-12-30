@@ -43,7 +43,8 @@ export default function Hero(props) {
             {props.cta &&
                 <Link to="/episodes"
                     // variant={props.ctaVariant}
-                    className={buttonStyle}
+                    className='custom-button custom-hover'
+                    style={{width: '80vw', height: '10vh'}}
                 // style={{backgroundColor:"light", height: "100px", width: "200px", borderRadius : "20px"}}
                 >
                     {buttonText}

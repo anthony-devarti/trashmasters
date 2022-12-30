@@ -2,6 +2,7 @@ import EpisodeCard from "../components/EpisodeCard";
 import { useEffect, useState } from "react";
 import { rssUrl } from "../data/appContants";
 import Spinner from '../components/svgComponents/Spinner'
+import { Container } from "react-bootstrap";
 
 export default function Episodes(props) {
 
@@ -38,21 +39,23 @@ export default function Episodes(props) {
                 Episodes
             </h1>
             <h2 className="center">Check out all of our episodes right here.</h2>
+            <Container className="episodes">
             {
                 !rowData &&
                 <div className="spinner">
                     <Spinner style={{ height: "30vh" }} />
                 </div>
             }
-            {
-                rowData &&
-                rowData.length > 0 &&
-                rowData.map((row, index) => {
-                    return (
-                        <EpisodeCard episode={row} />
-                    )
-                })
-            }
+                {
+                    rowData &&
+                    rowData.length > 0 &&
+                    rowData.map((row, index) => {
+                        return (
+                            <EpisodeCard episode={row} />
+                        )
+                    })
+                }
+            </Container>
             {/* <EpisodeCard episode={rowData[0]} /> */}
         </>
     )

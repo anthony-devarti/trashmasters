@@ -2,7 +2,6 @@
 
 //modules imports
 @import 'modules/footer';
-@import 'modules/hero';
 @import 'modules/about_card';
 @import 'modules/buttons';
 @import 'modules/navbar';
@@ -10,12 +9,14 @@
 @import 'modules/title_section';
 @import 'modules/spinner';
 @import 'modules/instruction_section';
+@import 'modules/hero';
 //pages imports
 @import 'pages/Subscribe';
 @import 'pages/about';
 @import 'pages/discord';
 @import 'pages/guests';
 @import 'pages/social';
+@import 'pages/episodes';
 
 //
 .global{

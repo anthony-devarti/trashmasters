@@ -29,7 +29,7 @@
 
     .row {
         width: 100vw;
-        height: 15vh;
+        height: 30vh;
         margin-left: -8rem;
         margin-top: 2rem;
         display: flex;
@@ -52,6 +52,7 @@
             bottom: 5px;
             right: 42px;
             padding: unset;
+            margin: 3rem;
         }
 
         .text {
@@ -77,6 +78,7 @@
         .skew-col:hover {
             width: 500px;
             color: $light;
+            padding: 2rem;
 
             .text {
                 display: flex;
@@ -93,9 +95,9 @@
         background-color: white;
         margin-left: 0;
         font-family: 'Grenze Gotisch', cursive;
-        font-size: 30pt;
         font-weight: 600;
         text-align: center;
+        height: 10vh;
     }
 
     @media screen and (max-width: 480px) {

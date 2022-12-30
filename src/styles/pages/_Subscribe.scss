@@ -4,9 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: $footer-height;
 
     .subscription{
         margin: 2rem;
+        text-align: center;
+        font-size: 24pt;
 
         .icon{
             fill: white;
