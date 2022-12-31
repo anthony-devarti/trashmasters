@@ -7,6 +7,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: calc(100vh - $navbar-height);
 
     .btn{
         background-color: $olive;
@@ -53,9 +54,5 @@
 
     .a:hover{
         color: $light;
-    }
-
-    .custom-button:hover{
-            outline: $light solid 1px;
     }
 }

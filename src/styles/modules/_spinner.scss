@@ -1,9 +1,7 @@
 .spinner{
+    padding: 3rem;
+    height: 80vh;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    justify-content: space-around;
+    align-content: space-around;
 }

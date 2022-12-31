@@ -50,11 +50,10 @@
   background-image: linear-gradient(144deg, #730A13, #D9303E 50%, #B2AC58);
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: #f7f6fa 0 5px 15px -5px;
   box-sizing: border-box;
   color: #FFFFFF;
   display: flex;
-  font-family: Phantomsans, sans-serif;
   font-size: 20px;
   justify-content: center;
   line-height: 1em;
@@ -70,6 +69,13 @@
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.custom-button:hover {
+  outline: #f7f6fa solid 1px;
+  color: #f7f6fa;
+  box-shadow: 0 0 30px 12px #f7f6fa;
 }
 
 .custom-button:active,
@@ -328,17 +334,11 @@
 }
 
 .spinner {
+  padding: 3rem;
+  height: 80vh;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 4000ms;
-          animation-duration: 4000ms;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 .instruction-seciton {
@@ -360,6 +360,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 75px);
 }
 .hero .btn {
   background-color: #B2AC58;
@@ -403,9 +404,6 @@
 .hero .a:hover {
   color: #f7f6fa;
 }
-.hero .custom-button:hover {
-  outline: #f7f6fa solid 1px;
-}
 
 .subscribe {
   display: flex;
@@ -447,7 +445,7 @@
   width: 50vw;
 }
 .about .row {
-  width: 100vw;
+  width: 95vw;
   height: 30vh;
   margin-left: -8rem;
   margin-top: 2rem;

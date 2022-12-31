@@ -9,11 +9,10 @@
   background-image: linear-gradient(144deg, $dark-red, $red 50%, $olive);
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: $light 0 5px 15px -5px;
   box-sizing: border-box;
   color: #FFFFFF;
   display: flex;
-  font-family: Phantomsans, sans-serif;
   font-size: 20px;
   justify-content: center;
   line-height: 1em;
@@ -27,6 +26,13 @@
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.custom-button:hover{
+  outline: $light solid 1px;
+  color: $light;
+  box-shadow: 0 0 30px 12px $light;
 }
 
 .custom-button:active,

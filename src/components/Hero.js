@@ -34,7 +34,6 @@ export default function Hero(props) {
 
     return (
         <div className="hero" style={{
-            height: size,
             backgroundImage: `url(${props.bgImage})`
         }}>
             <div className="hero-header">

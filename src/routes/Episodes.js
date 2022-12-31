@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { rssUrl } from "../data/appContants";
 import Spinner from '../components/svgComponents/Spinner'
 import { Container } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 export default function Episodes(props) {
 
@@ -39,19 +41,21 @@ export default function Episodes(props) {
                 Episodes
             </h1>
             <h2 className="center">Check out all of our episodes right here.</h2>
-            <Container className="episodes">
-            {
-                !rowData &&
-                <div className="spinner">
-                    <Spinner style={{ height: "30vh" }} />
-                </div>
-            }
+            <Container className="episodes" key='episodes'>
+                {
+                    !rowData &&
+                    <div className="spinner">
+                        <FontAwesomeIcon icon={faSpinner} pulse size="xl" />
+                    </div>
+                }
                 {
                     rowData &&
                     rowData.length > 0 &&
                     rowData.map((row, index) => {
                         return (
-                            <EpisodeCard episode={row} />
+                            <>
+                                <EpisodeCard key={index} episode={row} />
+                            </>
                         )
                     })
                 }

@@ -1,4 +1,6 @@
 import { Row, Col } from 'react-bootstrap'
+import KyleCutout from '../img/KyleCutout.png'
+import AnthonyCutout from '../img/AnthonyCutout.png'
 /* 
 this will provide an about row for hosts
 props:
@@ -9,6 +11,7 @@ image: path to image
 */
 
 export default function AboutRow(props) {
+
     return (
         <Row>
             <div className="skew-col name">
@@ -33,7 +36,10 @@ export default function AboutRow(props) {
                 </div>
             </div>
             <div className='picture'>
-                A picture goes here
+                <img 
+                src={props.name == 'Kyle' ? KyleCutout : AnthonyCutout} 
+                style={{height:"30vh"}}
+                />
             </div>
         </Row>
     )
