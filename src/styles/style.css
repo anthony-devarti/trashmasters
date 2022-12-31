@@ -120,6 +120,9 @@
   text-decoration: none;
   color: #f7f6fa;
 }
+.navigator .nav-link .link:hover {
+  text-shadow: 0 0 11px white;
+}
 
 .episode-card {
   margin: 2.5rem;

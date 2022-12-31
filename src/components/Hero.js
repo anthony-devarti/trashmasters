@@ -1,13 +1,12 @@
 /*
 
-The Hero Component takes the following props
-size: a number associated with the vh
+The Hero Component takes up the whole page, minus the navbar height.  It displays an image, with a cta button, header, and maybe even a description
+Props:
 cta: true or false
     if true, a cta button will be added in the center of the hero image
 ctaText: string
     if this is null, it will default to "Learn More"
 ctaVariant: defaults to olive, can also be set to be red
-ctaSize: sm, md, lg, xl
 ctaOnclick: a function to be executed when the cta is clicked
 bgImage: string url to an image.  
  */
@@ -26,12 +25,6 @@ export default function Hero(props) {
         buttonStyle = 'btn red'
     }
 
-    let size = '100vh'
-    if (props.size) {
-        size = `${props.size}vh`
-    }
-
-
     return (
         <div className="hero" style={{
             backgroundImage: `url(${props.bgImage})`
@@ -39,12 +32,15 @@ export default function Hero(props) {
             <div className="hero-header">
                 {props.header}
             </div>
+            {props.description && 
+            <p style={{color:'white'}}>
+                {props.description}
+            </p>
+            }
             {props.cta &&
                 <Link to="/episodes"
-                    // variant={props.ctaVariant}
                     className='custom-button custom-hover'
                     style={{width: '80vw', height: '10vh'}}
-                // style={{backgroundColor:"light", height: "100px", width: "200px", borderRadius : "20px"}}
                 >
                     {buttonText}
                 </Link>
