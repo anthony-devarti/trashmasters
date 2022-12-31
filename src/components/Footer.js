@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+
 export default function Footer(props) {
     const year = new Date().getFullYear();
     return (
@@ -6,7 +9,7 @@ export default function Footer(props) {
                 <a href="mailto:goblintrashmasters@gmail.com" className="footer-link">Email Us</a>
             </div>
             <div>
-                {`Copyright The Goblin Trashmasters ${year}`}
+            <FontAwesomeIcon icon={faCopyright} /> {`The Goblin Trashmasters ${year}`}
             </div>
         </div>
     )
