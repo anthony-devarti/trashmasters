@@ -63,7 +63,6 @@
   padding: 3px;
   text-decoration: none;
   -moz-user-select: none;
-   -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -221,8 +220,7 @@
 }
 .episode-card .productImage:hover {
   transition: ease 2s all;
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
   transform: rotate(-70deg) translate(10px, 66px);
 }
 .episode-card h1 {
@@ -311,14 +309,6 @@
   justify-content: center;
   color: rgba(255, 255, 255, 0.7);
 }
-@-webkit-keyframes updowncontroller {
-  0% {
-    transform: rotate(-90deg) translate(-56px, 66px);
-  }
-  80%, 100% {
-    transform: rotate(-70deg) translate(10px, 66px);
-  }
-}
 @keyframes updowncontroller {
   0% {
     transform: rotate(-90deg) translate(-56px, 66px);
@@ -369,7 +359,6 @@
   background-color: #B2AC58;
   align-items: center;
   width: 90vw;
-  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   padding: 1rem;
@@ -423,105 +412,33 @@
   fill: white;
 }
 
-.about {
-  color: black;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  bottom: -35px;
-  margin-bottom: 1rem;
-}
-.about .mobile {
-  display: none;
-}
-.about .unskewed {
-  padding: 2rem;
-  transform: skewX(-45deg);
-}
-.about .picture {
-  position: relative;
-  right: 0;
-  height: 100%;
+.about .about-cards {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 50vw;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
 }
-.about .row {
-  width: 95vw;
-  height: 30vh;
-  margin-left: -8rem;
-  margin-top: 2rem;
+.about .about-cards .card {
+  margin: 1rem;
+  height: 40vh;
+  transition: all 0.4s ease-in-out;
+}
+.about .about-cards .card:hover {
+  transform: scale(1.07);
+}
+.about .pitch {
   display: flex;
   flex-direction: column;
-}
-.about .row .skew-col {
-  background-color: red;
-  transform: skewX(45deg);
-  height: 100%;
-  width: 15vw;
-  transition: width 2s;
-  transition-timing-function: ease-out;
-}
-.about .row .name-text {
-  color: #f7f6fa;
-  font-size: 2rem;
-  text-align: end;
-  position: absolute;
-  bottom: 5px;
-  right: 42px;
-  padding: unset;
-  margin: 3rem;
-}
-.about .row .text {
-  display: none;
-}
-.about .row .name {
-  background-color: black;
-  width: 30vw;
-  color: #f7f6fa;
-}
-.about .row .info {
-  background-color: #730A13;
-  color: transparent;
-}
-.about .row .roles {
-  background-color: #D9303E;
-  color: transparent;
-}
-.about .row .skew-col:hover {
-  width: 500px;
-  color: #f7f6fa;
-  padding: 2rem;
-}
-.about .row .skew-col:hover .text {
-  display: flex;
-}
-.about .row .name:hover {
-  width: 30vw;
-}
-.about .first {
-  background-image: none;
-  background-color: white;
-  margin-left: 0;
-  font-family: "Grenze Gotisch", cursive;
-  font-weight: 600;
   text-align: center;
-  height: 10vh;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #730A13;
+  border-radius: 20pt;
+  color: #f7f6fa;
+  transition: all 0.4s ease-in-out;
 }
-@media screen and (max-width: 480px) {
-  .about .desktop {
-    display: none;
-  }
-  .about .mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  .about .mobile .card {
-    margin: 1rem;
-  }
+.about .pitch:hover {
+  transform: scale(1.07);
 }
 
 .discord {

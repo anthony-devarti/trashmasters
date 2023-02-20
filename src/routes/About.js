@@ -1,5 +1,7 @@
 import { Container, Row, Card, Button } from 'react-bootstrap'
 import AboutRow from "../components/AboutRow"
+import anthonyAbout from '../img/anthonyAbout.jpg'
+import kyleAbout from '../img/kyleAbout.jpg'
 
 export default function About() {
     return (
@@ -7,39 +9,15 @@ export default function About() {
             <Row className="first title-section">
                 Meet the Trashmasters!
             </Row>
-            <div className='desktop'>
-                <AboutRow
-                    name={'Anthony'}
-                    info={['Standard Specialist', 'Been playing magic forever']}
-                    roles={"Developer"}
-                />
-                <AboutRow
-                    name={"Kyle"}
-                    info={['Modern Maestro', '10 years magic experience']}
-                    roles={"Graphic Designer"}
-                />
+            <div className='about-cards'>
+                <img className='card' src={kyleAbout} alt="Kyle" />
+                <img className='card' src={anthonyAbout} alt="Anthony" />
             </div>
-            <div className='mobile'>
-                <Card>
-                    <Card.Img variant="top" src="https://images.unsplash.com/photo-1473225071450-1f1462d5aa92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"/>
-                    <Card.Body>
-                        <Card.Title>Kyle</Card.Title>
-                        <Card.Text>
-                            Modern Maestro
-                        </Card.Text>
-                        {/* <Button variant="primary">Go somewhere</Button> */}
-                    </Card.Body>
-                </Card>
-                <Card>
-                <Card.Img variant="top" src="https://images.unsplash.com/photo-1473225071450-1f1462d5aa92?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"/>
-                    <Card.Body>
-                        <Card.Title>Anthony</Card.Title>
-                        <Card.Text>
-                            Standard Specialist
-                        </Card.Text>
-                        {/* <Button variant="primary">Go somewhere</Button> */}
-                    </Card.Body>
-                </Card>
+            <div className='pitch'>
+                <h2>What we do</h2>
+                <p>
+                    The Goblin Trashmasters is a weekly podcast where veteran Magic grinders talk news, format changes, and whatever else is relevant to the aspiring grinder.  With a focus on growth and improvement, the podcast is a great choice for anyone trying to bump themselves up to the next level in their magic playing career.
+                </p>
             </div>
         </Container>
     )
