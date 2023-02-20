@@ -39,7 +39,7 @@ export default function Episodes(props) {
             <h1 className="title-section center">
                 Episodes
             </h1>
-            <h2 className="center">Check out all of our episodes right here.</h2>
+            <h2 className="center" style={{padding: '1rem', textAlign: 'center'}}>Check out all of our episodes right here.</h2>
             <Container className="episodes" key='episodes'>
                 {
                     !rowData &&
@@ -59,7 +59,6 @@ export default function Episodes(props) {
                     })
                 }
             </Container>
-            {/* <EpisodeCard episode={rowData[0]} /> */}
         </>
     )
 }

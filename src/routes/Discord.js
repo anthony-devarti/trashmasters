@@ -8,7 +8,7 @@ export default function Discord() {
             </h1>
             <Row>
                 <Col></Col>
-                <Col>
+                <Col style={{textAlign:'center'}} >
                     Join our discord server to stay up to date on episode releases, streams, events, or even just as a place to talk magic!
                 </Col>
                 <Col></Col>
