@@ -15,6 +15,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import Footer from './components/Footer';
 import Discord from './routes/Discord'
 import Social from "./routes/Social";
+import Images from "./routes/images";
 
 function App() {
 
@@ -77,6 +78,7 @@ function App() {
             <Route path="/shop" element={<Shop />} />
             <Route path ="/guests" element={<Guests />} />
             <Route path ="/social" element={<Social />} />
+            <Route path="/images" element={<Images />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
