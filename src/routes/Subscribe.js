@@ -13,13 +13,13 @@ export default function Subscribe() {
                 <div className="subscription">
                     <SubscriptionButton
                         service={"Apple Podcasts"}
-                        link={"https://apple.com"}
+                        link={"https://podcasts.apple.com/us/podcast/the-goblin-trashmasters/id1658234557"}
                     />
                 </div>
                 <div className="subscription">
                     <SubscriptionButton
                         service={"Google Podcasts"}
-                        link={"google.com"}
+                        link={"https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9jODUzNmQ2Yy9wb2RjYXN0L3Jzcw"}
                     />
                 </div>
                 <div className="subscription">
