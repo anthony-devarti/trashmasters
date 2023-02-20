@@ -13,11 +13,12 @@ import PodcastIcon from '../components/svgComponents/PodcastIcon'
 import descriptionCleaner from '../utilities/descriptionCleaner'
 import titleCleaner from '../utilities/titleCleaner'
 
+
 export default function EpisodeCard({ episode }) {
 
-    console.log("episode in episode Card", episode)
-
-
+function descriptionMarkup() {
+    return {__html: episode.description}
+}
     return (
         <div className="episode-card">
 
@@ -42,7 +43,8 @@ export default function EpisodeCard({ episode }) {
 
                 <div className="productSpecifications">
                     <h1> {titleCleaner(episode.title)} </h1>
-                    <p> {descriptionCleaner(episode.description)} </p>
+                    {/* XSS attack risk is very low, as this information only comes from the RSS feed and no user can interact with it. */}
+                    <p dangerouslySetInnerHTML={descriptionMarkup()} />
 
                     <div className="checkoutButton">
                         <div className="priceTag">

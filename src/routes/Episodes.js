@@ -16,7 +16,6 @@ export default function Episodes(props) {
             .then(response => response.text())
             .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
             .then(data => {
-                console.log("data in the request", data)
                 const itemList = data.querySelectorAll('item');
 
                 const items = [];

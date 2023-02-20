@@ -3,6 +3,7 @@ export default function descriptionCleaner(description){
     if (!typeof description == 'string') {
         description.toString()
     }
+    console.log(description)
 
-    return description.replace( /(<([^>]+)>)/ig, '');
+    return description.replace( /(<([^>]+)>)/ig, '').replace('&nbsp;', ' ');
 }
