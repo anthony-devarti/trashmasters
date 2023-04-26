@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import Discord from './routes/Discord'
 import Social from "./routes/Social";
 import Images from "./routes/images";
+import Calendar from "./routes/Calendar";
 
 function App() {
 
@@ -64,6 +65,11 @@ function App() {
                       Social Media
                     </Link>
                   </Nav.Link>
+                  <Nav.Link as="div">
+                    <Link to="/calendar" className='link'>
+                      Calendar
+                    </Link>
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -79,6 +85,7 @@ function App() {
             <Route path ="/guests" element={<Guests />} />
             <Route path ="/social" element={<Social />} />
             <Route path="/images" element={<Images />} />
+            <Route path="/calendar" element={<Calendar />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

@@ -1,0 +1,11 @@
+@import '../variables';
+
+.calendar {
+    padding-bottom: $footer-height;
+
+    .contact {
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
