@@ -1,16 +1,26 @@
-import { Row, Col, Alert } from 'react-bootstrap'
+import { Row, Col, Alert, Button } from 'react-bootstrap'
+import linkTo from '../utilities/linkTo'
 
 export default function Calendar() {
     return (
         <>
             <div className="calendar">
                 <h1 className="title-section">
-                    Calendar
+                    Resources
                 </h1>
                 <Row>
                     <Col></Col>
                     <Col style={{ textAlign: 'center' }} >
-                        Your place to find details about upcoming RCQs!
+                        Your place to find details about upcoming RCQs and other events, and even a handy link to our shared google documents!
+                    </Col>
+                    <Col></Col>
+                </Row>
+                <Row>
+                    <Col></Col>
+                    <Col style={{ textAlign: 'center', paddingTop: '1rem' }}>
+                        <Button
+                            onClick={() => linkTo('https://drive.google.com/drive/folders/1dkz8fZ-m0b9qOEQZmL8BwbSJ1tUx_TbT?usp=sharing')}
+                        >Resources</Button>
                     </Col>
                     <Col></Col>
                 </Row>
@@ -28,7 +38,7 @@ export default function Calendar() {
                                 Did we miss one?  If you would like to submit another RCQ to be included, we'll do it!  Just shoot us an <a href="mailto:goblintrashmasters@gmail.com">email</a>.
                             </p>
                             <p>
-                                To be included, the email will need to have a subject line of "RCQ Addition" and will need a link to the event page on WOTC's site. (It will look like locator.wizards.com/events/123456789/false  You'll see this if you go through the Wizards Event Locator)
+                                To be included, the email will need to have a subject line of "RCQ Addition" and will need a link to the event page on WOTC's site. (It will start with "locator.wizards.com/events"  You'll see this if you go through the Wizards Event Locator)
                                 If there is not a locator link, we will look into it but we will have to include a note that your event is not confirmed as a valid RCQ.  RCQs must be scheduled in order to give out qualifications.
                             </p>
                             <p>

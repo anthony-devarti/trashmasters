@@ -67,7 +67,7 @@ function App() {
                   </Nav.Link>
                   <Nav.Link as="div">
                     <Link to="/calendar" className='link'>
-                      Calendar
+                      Resources
                     </Link>
                   </Nav.Link>
                 </Nav>
