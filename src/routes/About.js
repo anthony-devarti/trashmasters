@@ -2,6 +2,7 @@ import { Container, Row, Card, Button } from 'react-bootstrap'
 import AboutRow from "../components/AboutRow"
 import anthonyAbout from '../img/anthonyAbout.jpg'
 import kyleAbout from '../img/kyleAbout.jpg'
+import ashleyAbout from '../img/ashleyAbout.jpg'
 
 export default function About() {
     return (
@@ -12,6 +13,7 @@ export default function About() {
             <div className='about-cards'>
                 <img className='card' src={kyleAbout} alt="Kyle" />
                 <img className='card' src={anthonyAbout} alt="Anthony" />
+                <img className='card' src={ashleyAbout} alt="Ashley" />
             </div>
             <div className='pitch'>
                 <h2>What we do</h2>

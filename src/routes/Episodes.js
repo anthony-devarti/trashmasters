@@ -40,7 +40,7 @@ export default function Episodes(props) {
                 Episodes
             </h1>
             <h2 className="center" style={{padding: '1rem', textAlign: 'center'}}>Check out all of our episodes right here.</h2>
-            <Container className="episodes" key='episodes'>
+            <Container className="episodes">
                 {
                     !rowData &&
                     <div className="spinner">
