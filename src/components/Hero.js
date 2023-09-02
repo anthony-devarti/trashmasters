@@ -32,18 +32,23 @@ export default function Hero(props) {
             <div className="hero-header">
                 {props.header}
             </div>
-            {props.description && 
-            <p style={{color:'white'}}>
-                {props.description}
-            </p>
+            {props.description &&
+                <p style={{ color: 'white' }}>
+                    {props.description}
+                </p>
             }
             {props.cta &&
                 <Link to="/episodes"
                     className='custom-button custom-hover'
-                    style={{width: '80vw', height: '10vh'}}
+                    style={{ width: '80vw', height: '10vh' }}
                 >
                     {buttonText}
                 </Link>
+            }
+            {props.children &&
+                <div className="announcement">
+                    {props.children}
+                </div>
             }
         </div>
     )

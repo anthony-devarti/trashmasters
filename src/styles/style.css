@@ -398,6 +398,9 @@
 .hero .a:hover {
   color: #f7f6fa;
 }
+.hero .announcement {
+  margin-top: 20vh;
+}
 
 .subscribe {
   display: flex;
