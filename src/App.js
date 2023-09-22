@@ -17,6 +17,7 @@ import Discord from './routes/Discord'
 import Social from "./routes/Social";
 import Images from "./routes/images";
 import Calendar from "./routes/Calendar";
+import Crap from "./routes/Crap";
 
 function App() {
 
@@ -70,6 +71,11 @@ function App() {
                       Resources
                     </Link>
                   </Nav.Link>
+                  <Nav.Link as="div">
+                    <Link to="/crap" className='link'>
+                      CRAP
+                    </Link>
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -86,6 +92,7 @@ function App() {
             <Route path ="/social" element={<Social />} />
             <Route path="/images" element={<Images />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/crap" element={<Crap />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

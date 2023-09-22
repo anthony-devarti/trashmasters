@@ -25,6 +25,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
 .footer {
   position: fixed;
   bottom: 0;
@@ -526,6 +528,16 @@
   padding: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.crap {
+  background-color: black;
+  height: 93vh;
+  color: white;
+}
+.crap .accordion-item, .crap .accordion-header, .crap .accordion-button {
+  background-color: grey;
+  color: #f7f6fa;
 }
 
 .global {

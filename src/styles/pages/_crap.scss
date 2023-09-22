@@ -1,0 +1,13 @@
+@import '../variables';
+
+.crap{
+    background-color: $black;
+    height: 93vh;
+    color: $white;
+
+    .accordion-item, .accordion-header, .accordion-button{
+        background-color: grey;
+        color: $light;
+    }
+
+}
