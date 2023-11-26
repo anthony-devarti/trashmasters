@@ -1,0 +1,21 @@
+@import '../variables';
+
+.token-feature{
+    background-color: $black;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+
+    .slide{
+        .carousel-inner{
+            .carousel-item{
+                .token-image{
+                    max-height: 30vh;
+                margin-left: 18rem;
+                margin-right: 18rem;
+                margin-bottom: 12rem;
+                }
+            }
+
+        }
+    }
+}

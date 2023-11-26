@@ -27,6 +27,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
 .footer {
   position: fixed;
   bottom: 0;
@@ -401,7 +405,19 @@
   color: #f7f6fa;
 }
 .hero .announcement {
-  margin-top: 20vh;
+  margin-top: 6vh;
+}
+
+.token-feature {
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+.token-feature .slide .carousel-inner .carousel-item .token-image {
+  max-height: 30vh;
+  margin-left: 18rem;
+  margin-right: 18rem;
+  margin-bottom: 12rem;
 }
 
 .subscribe {
