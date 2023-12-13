@@ -413,6 +413,11 @@
   border-radius: 20px;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 820px) {
+  .token-feature {
+    display: none;
+  }
+}
 .token-feature .slide .carousel-inner .carousel-item .token-image {
   max-height: 30vh;
   margin-left: 18rem;
