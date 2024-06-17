@@ -1,0 +1,44 @@
+@import '../variables';
+
+.about-hosts-card{
+    width: 16rem;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 1rem;
+    border: solid black 1px;
+    background-color: $grey;
+    color: white;
+
+    .gradient{
+        background-image: linear-gradient($red, $dark-red);
+        height: 8rem;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .profile-down img{
+        height: 16rem;
+        border-radius: 15rem;
+        margin-top: -6rem;
+        padding: 5px;
+        background: white;
+    }
+
+    .profile-down{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        }
+        
+        .profile-description{
+            padding: 1rem;   
+        }
+
+        .profile-title{
+            padding: 1rem;
+            align-content: center;
+            font-weight: 700;
+            font-family: $grenz;
+            font-size: xx-large;
+        }
+}

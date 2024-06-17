@@ -124,8 +124,9 @@
     .about-cards {
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: center;
 
         .card {
             margin: 1rem;
@@ -139,6 +140,13 @@
 
     }
 
+    @media (max-width: 768px){
+            .about-cards{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
     .pitch {
         display: flex;
         flex-direction: column;
@@ -149,6 +157,7 @@
         border-radius: 20pt;
         color: $light;
         transition: all .4s ease-in-out;
+        margin-bottom: 4rem;
     }
 
     .pitch:hover{

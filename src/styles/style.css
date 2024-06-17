@@ -31,6 +31,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap");
 .footer {
   position: fixed;
   bottom: 0;
@@ -425,6 +427,44 @@
   margin-bottom: 12rem;
 }
 
+.about-hosts-card {
+  width: 16rem;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 1rem;
+  border: solid black 1px;
+  background-color: #4d4d50;
+  color: white;
+}
+.about-hosts-card .gradient {
+  background-image: linear-gradient(#D9303E, #730A13);
+  height: 8rem;
+  border-radius: 4px 4px 0px 0px;
+}
+.about-hosts-card .profile-down img {
+  height: 16rem;
+  border-radius: 15rem;
+  margin-top: -6rem;
+  padding: 5px;
+  background: white;
+}
+.about-hosts-card .profile-down {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.about-hosts-card .profile-description {
+  padding: 1rem;
+}
+.about-hosts-card .profile-title {
+  padding: 1rem;
+  align-content: center;
+  font-weight: 700;
+  font-family: "Grenze Gotisch", cursive;
+  font-size: xx-large;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -443,8 +483,9 @@
 .about .about-cards {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .about .about-cards .card {
   margin: 1rem;
@@ -453,6 +494,12 @@
 }
 .about .about-cards .card:hover {
   transform: scale(1.07);
+}
+@media (max-width: 768px) {
+  .about .about-cards {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .about .pitch {
   display: flex;
@@ -464,6 +511,7 @@
   border-radius: 20pt;
   color: #f7f6fa;
   transition: all 0.4s ease-in-out;
+  margin-bottom: 4rem;
 }
 .about .pitch:hover {
   transform: scale(1.07);

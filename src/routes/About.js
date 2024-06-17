@@ -1,8 +1,8 @@
 import { Container, Row, Card, Button } from 'react-bootstrap'
-import AboutRow from "../components/AboutRow"
-import anthonyAbout from '../img/anthonyAbout.jpg'
-import kyleAbout from '../img/kyleAbout.jpg'
-import ashleyAbout from '../img/ashleyAbout.jpg'
+import Sophie from '../img/Sophie.jpg'
+import Anthony from "../img/Anthony.jpg"
+import Andy from "../img/Andy.jpg"
+import AboutHostCard from '../components/AboutHostCard'
 
 export default function About() {
     return (
@@ -11,9 +11,21 @@ export default function About() {
                 Meet the Trashmasters!
             </Row>
             <div className='about-cards'>
-                <img className='card' src={kyleAbout} alt="Kyle" />
-                <img className='card' src={anthonyAbout} alt="Anthony" />
-                <img className='card' src={ashleyAbout} alt="Ashley" />
+                <AboutHostCard 
+                    img={Sophie}
+                    name="Sophie"
+                    about="The Eternal format specialist among the Trashmasters, she's probably targeting someone you love with a Lava Spike right now."
+                />
+                <AboutHostCard 
+                    img={Anthony}
+                    name="Anthony"
+                    about="Unfortunately ends up driving the bus a lot, which is bad because it does end up with a lot of cutaways to bad movies and WNBA talk."
+                />
+                <AboutHostCard 
+                    img={Andy}
+                    name="Andy"
+                    about="Pro Tour Competitor, nice guy (sans sarcastic tm), and generally poor taste in food set Standy Stakenewerth apart from the rest of the field of Magic Players."
+                />
             </div>
             <div className='pitch'>
                 <h2>What we do</h2>
